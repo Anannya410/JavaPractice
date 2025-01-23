@@ -1,6 +1,6 @@
 package Threads;
 
-class MyThread extends Thread{
+class ThreadInstance extends Thread{
     public void run(){
         System.out.println("MyThread is running");
     }
@@ -8,7 +8,7 @@ class MyThread extends Thread{
 
 public class ThreadExample1 {
     public static void main(String[] args) {
-        MyThread thread = new MyThread();
+        ThreadInstance thread = new ThreadInstance();
         thread.start();
     }
 }
